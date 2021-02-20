@@ -1,4 +1,90 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*
+#main {
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+body {
+    font-family: Roboto, HelveticaNeue, Arial, sans-seriff;
+    font-size: 10pt;
+}
+
+div {
+    display: block;
+}
+
+header {
+    display: flex;
+    height: 48px;
+    width: 100%;
+}
+
+.menu {
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    flex: 1 0 auto;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 4px;
+    grid-template-rows: repeat(3, 4px);
+    gap: 1px;
+    padding: 12px 0px 0px 10px;
+}
+
+.lines {
+    background-color: #70757a;
+    width: 18px;
+    height: 2.2px;
+}
+
+#all-img {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.all-img-bt {
+    color: #70757a;
+    display: block;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0px 6px 0px -5px;
+    padding: 0px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.empty-div {
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.dots {
+    background-color: #70757a;
+    border-radius: 50%;
+}
+
+.pattern-button {
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    flex: 1 0 auto;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 4px);
+    grid-template-rows: repeat(3, 4px);
+    gap: 2px;
+    padding: 12px 12px;
+    margin-left: 70px;
 }
