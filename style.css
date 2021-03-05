@@ -86,7 +86,7 @@ header {
     grid-template-columns: repeat(3, 4px);
     grid-template-rows: repeat(3, 4px);
     gap: 2px;
-    margin-left: 5px;
+    margin-left: -20px;
 }
 
 #img-container {
@@ -96,13 +96,12 @@ header {
 }
 
 .smaller-img {
-    background-size: 32px 32px;
-    border: 0;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    display: block;
-    margin-left: 50px;
-    margin-top: -16px;
-    padding-top: -40px;
+    position: relative;
+    bottom: 23px;
+    left: 10px;
 }
 
 #outer {
