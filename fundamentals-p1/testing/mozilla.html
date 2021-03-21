@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Click me!</button>
+    <p>DO NOT TOUCH THE BUTTON</p>
+    <script>
+        const btn = document.querySelector('button');
+        const txt = document.querySelector('p');
+
+        btn.addEventListener('click', updateBtn);
+
+        function updateBtn() {
+            if (btn.textContent === 'Click me!') {
+                btn.textContent = 'Click me before its to late!';
+                txt.textContent = "Initializing self destruction..."
+            }
+            else {
+                btn.textContent = "Click me!";
+                txt.textContent = "DO NOT TOUCH THE BUTTON";
+            }
+        }
+    </script>
+</body>
+
+</html>
